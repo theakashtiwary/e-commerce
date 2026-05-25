@@ -1,0 +1,15 @@
+{
+  "name": "marketlane-ecommerce",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Self-contained full-stack ecommerce application with catalog, cart, checkout, orders, and email notification hooks.",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js",
+    "seed": "node server/seed.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
