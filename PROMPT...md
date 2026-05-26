@@ -1,4 +1,4 @@
- Context and Role
+ # Context and Role
 
 You are responsible for developing a modern full stack e commerce platform that can function like a real world shopping application instead of a simple academic project.
 
