@@ -190,7 +190,7 @@ Display complete order details before confirmation.
 
 Show successful order information with generated order ID.
 
-Checkout Form Fields
+# Checkout Form Fields
 
 The checkout form must include:
 
@@ -251,8 +251,6 @@ The backend system must
 
 #  Database Requirements
 
-# Supported database options:
-
 1. MongoDB with Mongoose.
 2. PostgreSQL with Prisma ORM.
 
@@ -281,7 +279,7 @@ The order schema should include:
 
 #  Email Notification System
 
-# After successful order placement, the system must send emails containing:
+After successful order placement, the system must send emails containing:
 
 1. Customer name.
 2. Customer email.
