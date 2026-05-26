@@ -10,7 +10,7 @@ From the backend perspective, the platform should securely process customer orde
 
 The entire system should feel realistic, optimized, scalable, and production ready while maintaining clean UI interactions and smooth user experience.
 
- Objective
+ # Objective
 
 Develop a complete full stack e commerce application that includes the following functionalities:
 
@@ -25,13 +25,13 @@ Develop a complete full stack e commerce application that includes the following
 9. Performance optimization and SEO improvements.
 10. Production ready folder structure and deployment support.
 
- UI and Animation Requirements
+  # UI and Animation Requirements
 
  Scroll Based User Experience
 
 The application should provide smooth visual interactions that improve usability without reducing performance.
 
- Required Animation Features
+ # Required Animation Features
 
 1. Fade in product cards during loading.
 2. Smooth hover interactions on buttons and cards.
@@ -41,7 +41,7 @@ The application should provide smooth visual interactions that improve usability
 6. Loading animations during API requests.
 7. Interactive feedback for cart and checkout actions.
 
- Animation Optimization Rules
+# Animation Optimization Rules
 
 Animations must:
 
@@ -51,11 +51,11 @@ Animations must:
 4. Maintain smooth scrolling performance.
 5. Work efficiently across all screen sizes.
 
- Layout Requirements
+#  Layout Requirements
 
 The application must include the following sections and pages:
 
- Homepage
+# Homepage
 
 1. Hero section with promotional content.
 2. Featured products section.
@@ -63,7 +63,7 @@ The application must include the following sections and pages:
 4. Trending products section.
 5. Newsletter or promotional banner.
 
- Product Listing Page
+# Product Listing Page
 
 1. Product search functionality.
 2. Category based filtering.
@@ -71,7 +71,7 @@ The application must include the following sections and pages:
 4. Sorting options.
 5. Product grid layout.
 
- Product Detail Page
+ # Product Detail Page
 
 1. Product image gallery.
 2. Product information section.
@@ -80,7 +80,7 @@ The application must include the following sections and pages:
 5. Add to Cart functionality.
 6. Related product suggestions.
 
- Cart Page
+ # Cart Page
 
 1. Selected product list.
 2. Quantity management.
@@ -88,7 +88,7 @@ The application must include the following sections and pages:
 4. Pricing breakdown.
 5. Total amount calculation.
 
- Checkout Page
+# Checkout Page
 
 1. Customer information form.
 2. Shipping information section.
@@ -96,14 +96,14 @@ The application must include the following sections and pages:
 4. Final order summary.
 5. Confirmation step before order placement.
 
- Order Confirmation Page
+ # Order Confirmation Page
 
 1. Successful order details.
 2. Generated order ID.
 3. Purchased product summary.
 4. Delivery information.
 
- Responsive and Accessibility Requirements
+# Responsive and Accessibility Requirements
 
 The platform must:
 
@@ -118,7 +118,7 @@ The platform must:
 9. Use accessible button names.
 10. Maintain clean typography and spacing.
 
- Shared Header Requirements
+ # Shared Header Requirements
 
 The shared navigation header must include:
 
@@ -128,7 +128,7 @@ The shared navigation header must include:
 4. Shopping cart icon.
 5. Dynamic cart item counter.
 
- Footer Requirements
+#  Footer Requirements
 
 The footer should contain:
 
@@ -137,7 +137,7 @@ The footer should contain:
 3. Social media links.
 4. Copyright details.
 
- Product Catalog Requirements
+# Product Catalog Requirements
 
 The product catalog system must support:
 
@@ -148,7 +148,7 @@ The product catalog system must support:
 5. Dynamic product loading.
 6. Responsive product cards.
 
- Product Card Requirements
+#  Product Card Requirements
 
 Each product card should display:
 
@@ -159,7 +159,7 @@ Each product card should display:
 5. Quick Add to Cart button.
 6. Hover interaction effects.
 
- Shopping Cart Requirements
+ # Shopping Cart Requirements
 
 The shopping cart system must allow users to:
 
@@ -170,7 +170,7 @@ The shopping cart system must allow users to:
 5. View pricing breakdown.
 6. View final amount.
 
-Checkout System Requirements
+# Checkout System Requirements
 
  Checkout Flow
 
@@ -204,7 +204,7 @@ The checkout form must include:
 8. Payment Method
 9. Optional Order Notes
 
-Validation Requirements
+# Validation Requirements
 
 The application must:
 
@@ -217,7 +217,7 @@ The application must:
 7. Return clear success responses.
 8. Return descriptive error responses.
 
- Backend Requirements
+#  Backend Requirements
 
  API Endpoints
 
@@ -231,7 +231,7 @@ The application must:
 1. POST api orders for creating customer orders.
 2. GET api orders id for retrieving order details.
 
- Order Processing Requirements
+ # Order Processing Requirements
 
 The backend system must
 
@@ -242,21 +242,21 @@ The backend system must
 5. Return structured JSON responses.
 6. Handle backend validation properly.
 
-Order Status Types
+# Order Status Types
 
 1. Pending
 2. Confirmed
 3. Shipped
 4. Delivered
 
- Database Requirements
+#  Database Requirements
 
-Supported database options:
+# Supported database options:
 
 1. MongoDB with Mongoose.
 2. PostgreSQL with Prisma ORM.
 
- Product Schema Fields
+#  Product Schema Fields
 
 The product schema should include:
 
@@ -268,7 +268,7 @@ The product schema should include:
 6. imageUrl
 7. createdAt
 
-Order Schema Fields
+# Order Schema Fields
 
 The order schema should include:
 
@@ -279,9 +279,9 @@ The order schema should include:
 5. order status
 6. timestamps
 
- Email Notification System
+#  Email Notification System
 
-After successful order placement, the system must send emails containing:
+# After successful order placement, the system must send emails containing:
 
 1. Customer name.
 2. Customer email.
@@ -293,21 +293,21 @@ After successful order placement, the system must send emails containing:
 8. Shipping address.
 9. Final order amount.
 
- Email Requirements
+#  Email Requirements
 
 1. Send confirmation email to customer.
 2. Send notification email to admin.
 3. Store email credentials securely using environment variables.
 4. Handle email delivery failures gracefully.
 
-Supported Email Technologies
+# Supported Email Technologies
 
 1. Nodemailer
 2. SMTP
 3. SendGrid
 4. Mailgun
 
- Security Requirements
+#  Security Requirements
 
 The application must:
 
@@ -320,7 +320,7 @@ The application must:
 7. Keep credentials inside environment variables.
 8. Avoid exposing internal server errors.
 
- Rate Limiting and Spam Prevention
+#  Rate Limiting and Spam Prevention
 
 The backend system must:
 
@@ -328,7 +328,7 @@ The backend system must:
 2. Return HTTP 429 for excessive requests.
 3. Support optional Google reCAPTCHA v3 integration.
 
-Data Processing Requirements
+# Data Processing Requirements
 
 The backend should:
 
@@ -338,7 +338,7 @@ The backend should:
 4. Return structured API responses.
 5. Log backend failures properly.
 
- JSON Response Requirements
+#  JSON Response Requirements
 
  Success Response
 
@@ -348,7 +348,7 @@ The API should return a success message after successful order creation.
 
 The API should return descriptive validation and processing errors.
 
- UI and User Experience Guidelines
+#  UI and User Experience Guidelines
 
 The application should:
 
@@ -359,7 +359,7 @@ The application should:
 5. Show toast notifications for actions.
 6. Maintain smooth navigation flow.
 
- Toast Notification Requirements
+# Toast Notification Requirements
 
 Display notifications for:
 
@@ -369,7 +369,7 @@ Display notifications for:
 4. Validation errors.
 5. Backend failures.
 
- Performance and Scalability
+# Performance and Scalability
 
 The application must:
 
@@ -384,7 +384,7 @@ The application must:
 9. Avoid API bottlenecks.
 10. Maintain animation performance.
 
- SEO Requirements
+# SEO Requirements
 
 The application should:
 
@@ -394,7 +394,7 @@ The application should:
 4. Include Open Graph tags.
 5. Keep routes crawlable.
 
- Error Handling Requirements
+ # Error Handling Requirements
 
  Frontend Error Handling
 
@@ -405,7 +405,7 @@ The frontend must:
 3. Handle empty states properly.
 4. Show meaningful user feedback.
 
- Backend Error Handling
+#  Backend Error Handling
 
 The backend must:
 
@@ -415,14 +415,14 @@ The backend must:
 4. Handle email delivery failures gracefully.
 5. Return proper HTTP status codes.
 
-Logging Requirements
+# Logging Requirements
 
 Recommended logging tools:
 
 1. Morgan
 2. Winston
 
- Documentation Requirements
+ # Documentation Requirements
 
 Document the following clearly:
 
@@ -434,7 +434,7 @@ Document the following clearly:
 6. Deployment instructions.
 7. API endpoint documentation.
 
-Output Requirements
+# Output Requirements
 
 The final application must provide:
 
@@ -451,7 +451,7 @@ The final application must provide:
 11. Smooth user interactions.
 12. Production ready architecture.
 
- Technology Stack
+#  Technology Stack
 
 Frontend Technologies
 
@@ -471,13 +471,13 @@ Frontend Technologies
 6. dotenv
 7. Morgan or Winston
 
- Database Technologies
+ # Database Technologies
 
 1. MongoDB with Mongoose
    OR
 2. PostgreSQL with Prisma ORM
 
-Optional Technologies
+ # Optional Technologies
 
 1. Redis for caching.
 2. Cloudinary for image hosting.
